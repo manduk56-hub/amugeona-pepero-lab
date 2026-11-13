@@ -1,0 +1,15 @@
+{
+  "name": "amugeona-pepero-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "어떤 음식이든 초콜릿을 입혀 선물하는 아무거나 빼빼로 만들기 체험",
+  "scripts": {
+    "build": "node build-standalone.cjs",
+    "prestart": "node build-standalone.cjs",
+    "start": "node start-local.cjs",
+    "check": "node --check dist/app.js && node --check dist/coating.js && node --check build-standalone.cjs && node --check start-local.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
